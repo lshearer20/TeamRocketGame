@@ -1,0 +1,186 @@
+{
+	"Stage1":{
+		"waves":[
+			//Wave 1
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyA",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration": 1,
+					"velocity": 1,
+					"randomSpawn" : 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyA",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 2
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyA",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration": 1,
+					"velocity": 1,
+					"randomSpawn" : 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyA",
+					"count": 3,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 3
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyA",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration": 1,
+					"velocity": 1,
+					"randomSpawn": 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyA",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			]
+		]
+	},
+	"Stage2":{
+		"waves":[
+			//Wave 1
+			[
+				//Enemy Info
+				{
+					"enemyType" : "MidBoss",
+					"movementPattern": "None",
+					"health": 5,
+					"acceleration": 1,
+					"velocity": 1,
+					"randomSpawn": 0,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 1,
+						"Y": 0
+					},
+					"bulletType":  "MidBoss",
+					"count": 1,
+					"spawnInterval": 2.75
+				}
+			]
+		]
+	},
+	"Stage3":{
+		"waves":[
+			//Wave 1
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyB",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"randomSpawn" : 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyB",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 2
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyA",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"randomSpawn" : 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyA",
+					"count": 5,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 3
+			[
+				//Enemy Info
+				{
+					"enemyType" : "EnemyB",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"randomSpawn" : 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "EnemyB",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			]
+		]
+	},
+	"Stage4":{
+		"waves":[
+			//Wave 1
+			[
+				//Enemy Info
+				{
+					"enemyType" : "FinalBoss",
+					"movementPattern": "None",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"randomSpawn" : 0,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 1,
+						"Y": 0
+					},
+					"bulletType":  "MidBoss",
+					"count": 1,
+					"spawnInterval": 2.75
+				}
+			]
+		]
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"Stage1":{
+		"waves":[
+			//Wave 1
+			[
+				//Enemy Info
+				{
+					"enemyType" : "FinalBoss",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "FinalBoss",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 2
+			[
+				//Enemy Info
+				{
+					"enemyType" : "MidBoss",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "MidBoss",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			],
+			//Wave 3
+			[
+				//Enemy Info
+				{
+					"enemyType" : "MidBoss",
+					"movementPattern": "Straight",
+					"health": 5,
+					"acceleration" : 1,
+					"velocity": 1,
+					"fireRate": 900,
+					"direction": 
+					{
+						"X": 0,
+						"Y": 1
+					},
+					"bulletType":  "MidBoss",
+					"count": 2,
+					"spawnInterval": 2.75
+				}
+			]
+		]
+	},
+	"Stage2":{
+		"waves":[
+			//Wave 1
+			[
+				
+			]
+		]
+	},
+	"Stage3":{
+		"waves":[
+			//Wave 1
+			[
+				
+			],
+			//Wave 2
+			[
+				
+			],
+			//Wave 3
+			[
+				
+			]
+		]
+	},
+	"Stage4":{
+		"waves":[
+			//Wave 1
+			[
+				
+			]
+		]
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "acceleration": 3,
+  "velocity": 3,
+  "firerate": 1000,
+  "health": 3,
+  "invincible": true
+}

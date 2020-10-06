@@ -1,0 +1,135 @@
+#############################################
+#       Final project vision                #
+#############################################
+
+Divide the game up into 4 phases:
+Phase 1 (grunts),
+Phase 2 (mid-boss),
+Phase 3 (advanced grunts),
+Phase 4 (final-boss)
+
+Phase 1:
+3 Waves of enemies at 15 seconds a wave (45 seconds total)
+There will be approximately 1 second between waves
+Waves 1 and 2 will implement only Enemy A
+Wave 3 will implement both Enemy A and Enemy B 
+Each wave will have unique attack pattern for both enemies
+At 45 seconds (end of wave 3) enemies despawn followed by 
+5 seconds of down time before Phase 2 begins.
+
+Phase 2:
+begins at 48 seconds of gameplay. 
+Mid boss fight. MUST kill midboss to advance. 
+
+Phase 3:
+5 Waves of enemies at 15 seconds a wave (75 seconds total)
+There will be approximately 1 second between waves
+Wave 1 will consist of only Enemy A.
+Waves 2-5 will implement both Enemy A and Enemy B 
+Each wave will have unique attack patterns for both enemies
+75 seconds after Phase 3 begins enemies still remaining will despawn. 
+There will be 5 seconds of down time before the final boss (Phase 4) arives.
+
+Phase 4:
+Final boss fight. MUST kill final boss to finish game.
+
+Waves:
+Odd numbered waves will drop a power-up if all enemies 
+of that wave are killed. 
+For Phase 1, this will be waves 1 and 3.
+For Phase 3, this will be waves 1, 3, and 5.
+The power-up of Phase 1 wave 1 will be increased dmg.
+The power-up of Phase 1 wave 3 will be bombs
+The power-ups of Phase 3 will be random. 
+
+Power-ups:
+    Damage power up:
+    Increase player damgae by 50%
+    Increase player shot count from 1 to 2 for first upgrade
+    Increase player shot count from 2 to 4 for second upgrade
+    Additional shots 3 and 4 will fire 30 degrees from straight on both sides.
+    Increase player shot size.
+
+    Bomb power up:
+    Give player 3 bombs to use.
+    Bombs destory all grunts on screen
+    Bombs do NOT destory bullets
+
+    Sheild power up:
+    Increase player life by 10 (up to a maximum of 25)
+
+    Health power up:
+    If player's health is below 15, raise player health to 15.
+
+Stats:
+    Player:
+    Lives: 3
+    Base health: 15
+    Maximum health with power-ups: 25
+    Base damage: 10
+    Base shot count: 2
+    Base speed: 100% (of player base speed)
+    Toggle speed: 50-75% (of player base speed)
+    Attack style: Straight ahead shots
+
+    Enemy A:
+    Health: 9
+    Damage: 3
+    Speed: 150% (of player base speed)
+    Attack style: Shoots 2 bullets at player's current location
+
+    Enemy B:
+    Health: 30
+    Damage: 9
+    Speed: 85% (of player base speed)
+    Attack style: A single shot at player's current location
+
+    Mid-boss:
+    Health: 250
+    Damage 1: 3
+    Damage 2: 30
+    Speed: 65-75% (of player base speed)
+    Attack style 1: Rapid fire 15 bullets at player's location
+    Attack style 2: Launch 2-3 big motar shots (attack 2) near center of screen
+    Motars explode into many smaller bullets in a starburst style (attack 1)
+
+########################################################################
+### We must mimic the video, so attack styles may not be applicable. ###
+########################################################################
+    Final-boss:
+    Health: 500
+    Speed: 115% (of player base speed)
+    Damage 1: 9
+    Damage 2: 3
+    Damage 3: 30
+    Attack style 1: Fires seaking missles at player. May be destoryed. 
+    Attack style 2: Rapid fires 30 bullets at player's location
+    Attack style 3: Motar style bullets (see Mid-boss attack style 2)
+    Attack style 4: Fires large bullets straight down
+    
+    Final-boss has 4 stages:
+    Stage 1 (100% - 70% health):
+    Boss moves on screen from side to side, using attack styles 1 and 4
+    
+    Stage 2 (70% - 55% health):
+    Boss becomes stationary at the top of the screen and uses attack 
+    styles 1 and 2 at the same time.
+
+    Stage 3 (55% - 15% health):
+    Boss moves on screen in all possible directions quickly. 
+    Boss uses attack styles 1, 3, and 4.
+
+    Stage 4 (15% - 0 health):
+    Boss moves to top of screen and slowly moves side to side. Uses attack
+    styles 1, 2, and 3. Boss will use attack style 1 and 3 at the same
+    time and then use attack style 2 in alternating fashion.
+
+Scoring:
+Defeating listed entities rewards point values.
+    Enemy A: 50 points
+    Enemy B: 100 points
+    Mid-boss: 1500 points
+    Final-boss: 3000 points
+    Seaking missles: 15 points
+
+    Enemies defeated with bombs reward 50% point values

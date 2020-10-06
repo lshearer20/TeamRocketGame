@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0030390-CB93-4B8F-806E-B988E10259C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Team_Rocket_Game</RootNamespace>
+    <AssemblyName>Team Rocket Game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Collision\CollisionRegion.cs" />
+    <Compile Include="Controller\Collision\CollisionManager.cs" />
+    <Compile Include="Controller\Commands\Command.cs" />
+    <Compile Include="Controller\Commands\Shoot.cs" />
+    <Compile Include="Controller\Commands\ShootEnemyABullet.cs" />
+    <Compile Include="Controller\Commands\ShootEnemyBBullet.cs" />
+    <Compile Include="Controller\Commands\ShootFinalBossBullet.cs" />
+    <Compile Include="Controller\Commands\ShootMidBossBullet.cs" />
+    <Compile Include="Controller\Commands\ShootPlayerBullet.cs" />
+    <Compile Include="Controller\Commands\ShootSpecialPlayerBullet.cs" />
+    <Compile Include="Controller\Commands\Spawn.cs" />
+    <Compile Include="Controller\Commands\SpawnEnemyA.cs" />
+    <Compile Include="Controller\Commands\SpawnEnemyB.cs" />
+    <Compile Include="Controller\Commands\SpawnFinalBoss.cs" />
+    <Compile Include="Controller\Commands\SpawnMidBoss.cs" />
+    <Compile Include="Controller\GameManager.cs" />
+    <Compile Include="Controller\InputManager.cs" />
+    <Compile Include="Controller\StageManager.cs" />
+    <Compile Include="Controller\WaveManager.cs" />
+    <Compile Include="General\GameConfig.cs" />
+    <Compile Include="Controller\JSONConfigs.cs" />
+    <Compile Include="General\Movement\MovementFactories\MovementFactory.cs" />
+    <Compile Include="General\Movement\MovementFactories\OscillatePattern.cs" />
+    <Compile Include="General\Movement\OscillateMovement.cs" />
+    <Compile Include="Model\Factories\BulletFactories\EnemyBulletFactory.cs" />
+    <Compile Include="Model\Entities\Bullets\EnemyBullet.cs" />
+    <Compile Include="Model\Entities\Bullets\PlayerBullet.cs" />
+    <Compile Include="General\Types.cs" />
+    <Compile Include="General\Utilities.cs" />
+    <Compile Include="Model\Entities\Bullet.cs" />
+    <Compile Include="Model\Entities\Component.cs" />
+    <Compile Include="Model\Entities\Enemies\EnemyA.cs" />
+    <Compile Include="Model\Entities\Enemies\EnemyB.cs" />
+    <Compile Include="Model\Entities\Enemies\FinalBoss.cs" />
+    <Compile Include="Model\Entities\Enemies\MidBoss.cs" />
+    <Compile Include="Model\Entities\Enemy.cs" />
+    <Compile Include="Model\Entities\Player.cs" />
+    <Compile Include="Model\Entities\Sprite.cs" />
+    <Compile Include="Model\Factories\BulletAbstractFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\EnemyABulletFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\EnemyBBulletFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\FinalBossBulletFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\MidBossBulletFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\PlayerBulletFactory.cs" />
+    <Compile Include="Model\Factories\BulletFactories\PlayerSpecialBulletFactory.cs" />
+    <Compile Include="Model\Factories\EnemyAbstractFactory.cs" />
+    <Compile Include="Model\Factories\EnemyFactories\EnemyAFactory.cs" />
+    <Compile Include="Model\Factories\EnemyFactories\EnemyBFactory.cs" />
+    <Compile Include="Model\Factories\EnemyFactories\FinalBossFactory.cs" />
+    <Compile Include="Model\Factories\EnemyFactories\MidBossFactory.cs" />
+    <Compile Include="Model\GameData.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="General\Movement\AbstractMovementFactory.cs" />
+    <Compile Include="General\Movement\Movement.cs" />
+    <Compile Include="General\Movement\MovementFactories\StraightPattern.cs" />
+    <Compile Include="General\Movement\MovementFactories\WavePattern.cs" />
+    <Compile Include="General\Movement\ListMovement.cs" />
+    <Compile Include="General\Movement\SingleMovement.cs" />
+    <Compile Include="Model\Observer.cs" />
+    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controller\BulletManager.cs" />
+    <Compile Include="Controller\EnemyManager.cs" />
+    <Compile Include="View\ScreenManager.cs" />
+    <Compile Include="View\Screens\Background.cs" />
+    <Compile Include="View\Screens\DifficultySettingsScreen.cs" />
+    <Compile Include="View\Screens\GameScreen.cs" />
+    <Compile Include="View\Screens\LoseScreen.cs" />
+    <Compile Include="View\Screens\MenuScreen.cs" />
+    <Compile Include="View\Screens\PausedMenuScreen.cs" />
+    <Compile Include="View\Screens\SettingsScreen.cs" />
+    <Compile Include="View\Screens\WinScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="JSON\Bullets\EnemyABullets.json" />
+    <None Include="JSON\Bullets\EnemyBBullets.json" />
+    <None Include="JSON\Bullets\FinalBossBullets.json" />
+    <None Include="JSON\Bullets\MidBossBullets.json" />
+    <None Include="JSON\Bullets\PlayerBullet.json" />
+    <None Include="JSON\Bullets\PlayerBulletSpecial.json" />
+    <None Include="JSON\player.json" />
+    <None Include="JSON\Stages\Easy.json" />
+    <None Include="JSON\Stages\Hard.json" />
+    <None Include="JSON\Stages\Insane.json" />
+    <None Include="JSON\Stages\Medium.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Entities\PowerUps\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
